@@ -1,0 +1,67 @@
+.post {
+  display: flex;
+  border: 2px solid black;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.post > * {
+  padding: 5px;
+}
+
+.post .avatar img {
+  height: 50px;
+  border-radius: 50%;
+}
+
+
+.post .postData {
+  width: 100%;
+}
+
+.post .postData .postMeta{
+display: flex;
+padding: 5px;
+justify-content: space-between;
+}
+
+.post .postData .postMeta .author {
+  font-weight: 700;
+}
+
+.post .postData .postContent {
+  text-align: left;
+} 
+
+.post .likes {
+  text-align: right;
+  
+}
+
+
+.post .likes button{
+  margin: 0 5px;
+}
+
+/* Przyciski potwierdzenia usuń post */
+.deleteConfirmation {
+position: fixed;
+background-color: white;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+border: 1px solid black;
+}
+
+.deleteConfirmation .yes {
+  background-color: red;
+
+}
+
+.deleteConfirmation .nope {
+  background-color: darkgray;
+}
+
+.delete {
+  background-color: red;
+}
